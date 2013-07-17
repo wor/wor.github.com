@@ -1,11 +1,9 @@
 ---
-layout: layout
+layout: default
 ---
+<h2>{{ page.title }}</h2>
+<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="content">
-  <div id="post">
-    {% include post_header.html %}
-    {{ content }}
-  </div>
-
+<div class="post">
+{{ content }}
 </div>
