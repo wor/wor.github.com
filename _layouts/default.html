@@ -15,33 +15,11 @@
 <!-- JQuery javascript -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
 
-<!-- Javascript TODO: move to own file -->
-<script type="text/javascript">
-$(document).ready(
-    function() {
-        $('.about').hide();
+<!-- Helper functions -->
+<script src="/js/functions.js" type="text/javascript"></script>
 
-        $('.title').click(
-            function () {
-                $('.about').toggle('slow');
-            }
-        );
-
-        var email="if.iki@attaam.ase"
-        var phone="297706414 853"
-        $('#email, #email').each(
-            function() {
-                $(this)
-                .attr('href', "mailto:" + email.split("").reverse().join(""))
-                .text(email.split("").reverse().join(""));
-            }
-        );
-
-        $('#phone')
-            .text("+" + phone.split("").reverse().join(""));
-    }
-);
-</script>
+<!-- Layouts javascript -->
+<script src="/js/default.js" type="text/javascript"></script>
 
 </head>
 <body>
