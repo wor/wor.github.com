@@ -28,10 +28,15 @@ $(document).ready(
         );
 
         var email="if.iki@attaam.ase"
-        var phone="297706414853"
-        $('#email')
-            .attr('href', "mailto:" + email.split("").reverse().join(""))
-            .text(email.split("").reverse().join(""));
+        var phone="297706414 853"
+        $('#email, #email').each(
+            function() {
+                $(this)
+                .attr('href', "mailto:" + email.split("").reverse().join(""))
+                .text(email.split("").reverse().join(""));
+            }
+        );
+
         $('#phone')
             .text("+" + phone.split("").reverse().join(""));
     }
@@ -54,7 +59,15 @@ $(document).ready(
             phone:
             -->
             <div class="about">
-                <img src="/images/octocat.png" alt="gihub" style="height: 25px" />
+                Contact information:
+                <br />
+                Email: <a id="email">&ltfirst_name&gt.maatta@iki.fi</a>
+                <br />
+                Phone number: <span id="phone">Enable javascript to see phone number.</span>
+                <br />
+                <a href="http://github.com/wor/">
+                    <img src="/images/octocat.png" alt="github.com/wor" style="height: 25px" />
+                </a>
             </div>
         </div>
 
@@ -65,8 +78,6 @@ $(document).ready(
                 <p>
                 Esa Määttä<br />
                 <a id="email">&ltfirst_name&gt.maatta@iki.fi</a>
-                <br />
-                <span id="phone">Enable javascript to see phone number.</span>
                 </p>
             </div>
             <div class="contact">
