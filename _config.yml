@@ -1,4 +1,6 @@
 name: Esa Määttä
 markdown: redcarpet
+redcarpet:
+    extensions: [footnotes]
 pygments: true
 timezone: Europe/Helsinki
