@@ -6,11 +6,12 @@ published:  true
 orglayout:   post
 title:      "Start Bash And a Terminal Program"
 date:       2013-7-26 14:27:00
+modified:   2013-7-28 15:32:00
 ---
 
 (So that job control works.)
 
-While ago I tried to make a .desktop file to start bash shell and list directory
+While ago I tried to make a ".desktop" file to start bash shell and list directory
 contents and not exit.
 
 This was the command which I ended up with:
