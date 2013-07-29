@@ -18,9 +18,12 @@
 <!-- Helper functions -->
 <script src="/js/functions.js" type="text/javascript"></script>
 
-<!-- Layouts javascript: {{ page.orglayout}} / {{ page.layout }} -->
-{% if page.orglayout == 'default' %}
+<!-- Layouts default javascript: {{ page.orglayout}} / {{ page.layout }} -->
 <script src="/js/default.js" type="text/javascript"></script>
+
+{% if page.orglayout == 'default' %}
+<!-- Layouts content specific javascript: {{ page.orglayout}} / {{ page.layout }} -->
+<script src="/js/default_index.js" type="text/javascript"></script>
 {% endif %}
 
 </head>
@@ -56,6 +59,7 @@
                 </p>
             </div>
         </div>
+        <!-- <canvas id='canvas'></canvas> -->
     </div>
 </div>
 
