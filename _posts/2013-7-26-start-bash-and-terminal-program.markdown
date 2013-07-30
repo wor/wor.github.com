@@ -22,7 +22,7 @@ It starts terminal (in this case urxvtc) which in turn runs bash commands "cd
 \<some path\>", "ls" and "exec bash". The "exec bash" command is needed to stop
 the parent bash from exiting immediately after "ls" command has finished.
 
-This is basically the answer this question:
+This is basically the answer to this question:
 [bash-execute-command-given-in-commandline-and-dont-exit][superuser-bash]. The
 problem with this is that if one wants to start e.g. vim like this:
 
