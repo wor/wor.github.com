@@ -6,7 +6,7 @@ published:  true
 orglayout:   post
 title:      "Start Bash And a Terminal Program"
 date:       2013-7-26 14:27:00
-modified:   2013-7-28 15:32:00
+modified:   2013-8-7 15:46:00
 ---
 
 (So that job control works.)
@@ -57,6 +57,9 @@ control already works. There are probably other similar solutions, but I would
 be very happy to hear about a "clean" way to do this. I have contemplated of
 adding this functionality to my [xdg-open clone][pyxdg-open] but it just seems
 too hackish, even for me ;)
+
+If you have any questions, error corrections or just further remarks about this
+subject, I'm very happy to receive email about this.
 
 [^1]: If set, the value is interpreted as a command to execute before the
       printing of each primary prompt ($PS1), see [bash manual][bash-manual].
