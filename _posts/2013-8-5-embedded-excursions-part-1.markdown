@@ -12,7 +12,7 @@ modified:   2013-8-11 19:00:00
 I'm quite new to embedded development and embedded Linux distributions, so I'll
 just choose [Yocto](https://www.yoctoproject.org/) to build the root filesystem.
 First I need and test if I can build the default qemux86 image. If everything
-goes ok I can proceed to building root fs for my Freescale Arm board,
+goes ok, I can proceed to building root fs for my Freescale Arm board,
 [wandboard](http://www.wandboard.org/).
 
 About host I'm using:
@@ -78,7 +78,7 @@ script which is called by the "oe-init-build-env" script.
 
 {% gist 6204718 oe-buildenv-internal.patch %}
 
-After all this, sourcing "oe-init-build-env" works:
+After all this, sourcing "oe-init-build-env" works as intended:
 
     $ source poky-git/oe-init-build-env build
     You had no conf/local.conf file. This configuration file has therefore been
