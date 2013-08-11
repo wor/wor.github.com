@@ -11,8 +11,8 @@ modified:   2013-8-11 19:00:00
 
 I'm quite new to embedded development and embedded Linux distributions, so I'll
 just choose [Yocto](https://www.yoctoproject.org/) to build the root filesystem.
-First I need and test if I can build the default qemux86 image. If everything
-goes ok, I can proceed to building root fs for my Freescale Arm board,
+First I'll test if I can build the default qemux86 image. If everything goes ok,
+I can proceed to building root fs for my Freescale Arm board,
 [wandboard](http://www.wandboard.org/).
 
 About host I'm using:
