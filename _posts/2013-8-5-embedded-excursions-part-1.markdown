@@ -6,11 +6,12 @@ published:  true
 orglayout:   post
 title:      "Embedded excursions part 1: Testing Yocto/Poky on Arch Linux"
 date:       2013-8-11 19:00:00
-modified:   2013-8-11 19:00:00
+modified:   2013-8-13 15:10:00
 ---
 
 I'm quite new to embedded development and embedded Linux distributions, so I'll
-just choose [Yocto](https://www.yoctoproject.org/) to build the root filesystem.
+just choose [Yocto](https://www.yoctoproject.org/) to build the root filesystem,
+without extensive evaluation. Sometimes is just better to get started.
 First I'll test if I can build the default qemux86 image. If everything goes ok,
 I can proceed to building root fs for my Freescale Arm board,
 [wandboard](http://www.wandboard.org/).
@@ -24,8 +25,8 @@ About host I'm using:
     Linux qniitty 3.10.5-1-wor #1 SMP PREEMPT Sun Aug 4 21:49:08 EEST 2013
     x86_64 GNU/Linux
 
-Arch linux is not really validated to work with Yocto/Poky but let's try
-anyway. Using [Yocto v9.0.1]
+Arch linux is not really validated to work as host with Yocto/Poky but let's try
+it anyway. Using [Yocto v9.0.1]
 (http://downloads.yoctoproject.org/releases/yocto/yocto-1.4.1/poky-dylan-9.0.1.tar.bz2).
 
     $ source poky-dylan-9.0.1/oe-init-build-env build
@@ -88,7 +89,7 @@ After all this, sourcing "oe-init-build-env" works as intended:
 
     You can now run 'bitbake <target>'
 
-Before running bitmake one can edit "conf/local.conf" file to set target
+Before running bitmake, one can edit "conf/local.conf" file to set target
 machine and other options. For this test run the default machine "qemux86" will
 do.
 
@@ -150,5 +151,5 @@ poky-git/scripts/runqemu-if{up,down}).
     Set 'tap0' nonpersistent
     Releasing lockfile of preconfigured tap device 'tap0'
 
-Seems to work.
+Seems to work. Next testing on the wandboard.
 
