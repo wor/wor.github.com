@@ -1,0 +1,18 @@
+TODO
+====
+
+* current status = Working on project (status update/change date, cache of old status
+* messages)
+
+* topic = Esa Määttä { about, projects, work }
+    = work: current employer, itella ==> available for hire.
+
+* About: about.info from personal, description of my self.
+
+* own image to about page
+* site icon
+* gravatar image
+* draw ca to the bottom canvas
+    * decrease alpha by every line, until invisible and stop drawing
+* Better fonts
+* jekyll last modified date to posts automatically from last git commit
